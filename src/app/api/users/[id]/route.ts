@@ -17,7 +17,7 @@ export async function GET(_: NextRequest, segment: Segment) {
         
         if (user) {
             return NextResponse.json(
-                { data: user },
+                { user },
                 { status: 200 },
             );
         }
@@ -91,7 +91,7 @@ export async function PUT(request: NextRequest, segment: Segment) {
             return NextResponse.json(
                 {
                     message: 'User Successfully Updated!',
-                    data: updatedUser,
+                    user: updatedUser,
                 },
                 { status: 200 },
             );

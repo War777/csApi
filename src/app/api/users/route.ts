@@ -6,7 +6,7 @@ export async function GET() {
         const users = db.data.users;
     
         return NextResponse.json({
-            data: users,
+            users,
         });
     } catch (error) {
         return NextResponse.json(
@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
         await db.update(({ users }) => users.push(newUser))
 
         return NextResponse.json(
-            { data: newUser },
+            { user: newUser },
             { status: 200 },
         );
 
