@@ -12,9 +12,9 @@ Then run the server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the UI and start exploring the Users list.
 
-#### Available Endpoints:
+#### Available API Endpoints:
 
 ##### Get the users list
 GET [http://localhost:3000/api/users](http://localhost:3000/api/users)
